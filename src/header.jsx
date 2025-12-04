@@ -1,15 +1,13 @@
-import React, { useState } from 'react'; // Import useState hook
+import React from "react";
+
+import chefLogo from "./assets/chef.png";
 
 export default function Header() {
- 
-
   return (
     <header>
-      <img src="./src/assets/chef.png" alt="Chef" />
-      
-      <h1>
-    Chef Intelligence
-      </h1>
-    </header>  
+      {/* 2. Use the imported variable as the 'src' */}
+      <img src={chefLogo} alt="Cheffff" />
+      <h1>Chef Gpt</h1>
+    </header>
   );
 }
